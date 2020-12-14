@@ -1,0 +1,20 @@
+#IncludeRegexLine: ^[ 	]*[#%][ 	]*(include|import)[ 	]*[<"]([^">]+)([">])
+
+#IncludeRegexScan: ^.*$
+
+#IncludeRegexComplain: ^$
+
+#IncludeRegexTransform: 
+
+../lib/include/primes.hpp
+vector
+-
+
+/home/creapermann/Data/Programming/Cpp/Projects/Primes/lib/src/primes.cpp
+iostream
+-
+vector
+-
+primes.hpp
+/home/creapermann/Data/Programming/Cpp/Projects/Primes/lib/src/primes.hpp
+
