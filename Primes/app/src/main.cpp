@@ -1,13 +1,25 @@
 #include <iostream>
 #include "primes.hpp"
 
+void printPrimeVec(TIntVec);
 
 int main(){
     std::cout << "Top: " << std::endl;
     int n;
     std::cin >> n;
-    PrintPrimes pp;
-    pp.calculateAndPrintPrimes(n);
+
+    GetPrimes gp;
+    TIntVec resPrimeVec = gp.findAllPrimes(n);
+
+    printPrimeVec(resPrimeVec);
 
     return 1;
+}
+
+
+void printPrimeVec(TIntVec primeVec){
+    for(auto i : primeVec){
+        std::cout << i << " ";
+    }
+    std::cout << std::endl;
 }

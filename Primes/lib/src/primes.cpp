@@ -3,30 +3,40 @@
 
 #include "primes.hpp"
 
-PrintPrimes::PrintPrimes(){
-}
+
+GetPrimes::GetPrimes(){};
 
 
-TIntVec PrintPrimes::calculateAndPrintPrimes(int amount){
 
-    std::vector<int> numVec;
+bool checkIfPrime(int a);           //Function Prototype
 
-    for(int i = 2; i < amount; i++){
-        if(i == 2 || i == 3 || i == 5 || i == 7){
-            std::cout << i << " ";
-            numVec.emplace_back(i);
-        }
-        if(i % 2 != 0 && i % 3 != 0 && i % 5 != 0 && i % 7 != 0){
-            std::cout << i << " ";
-            numVec.emplace_back(i);
+TIntVec GetPrimes::findAllPrimes(int n){
+    TIntVec primesVec;
+
+    for(auto i = 0; i < n; i++){
+        if(checkIfPrime(i)){
+            primesVec.emplace_back(i);
         }
     }
-    std::cout << std::endl;
-    return numVec;
-}
 
-int PrintPrimes::a(){
-    return 1;
+    return primesVec;
 }
 
 
+bool checkIfPrime(int a){
+
+    if(a == 2)
+        return true;
+    if(a < 2)
+        return false;
+    int i;
+    for(i = 2; i <= (a/2); i++){
+        if(a % i == 0){
+            return false;
+        }
+    }
+    if(i != a)
+        return true;
+    else
+        return false;
+}

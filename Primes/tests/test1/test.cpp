@@ -2,41 +2,56 @@
 #include "gtest/gtest.h"
 
 //Test Fxiture
-class PrimesTest : public testing::Test{
+class GetPrimesTest : public testing::Test{
 public:
-    PrintPrimes pp;
+    GetPrimes gp;
 };
 
+//METHOD TO CALCULATE THE RIGHT AMOUNT OF PRIMES FROM 2 - n
 
 //Tests
-TEST_F(PrimesTest, FirstVal){
+TEST_F(GetPrimesTest, sizeCompare){
 
-    ASSERT_EQ(pp.calculateAndPrintPrimes(100)[0], 2);
+    ASSERT_EQ(gp.findAllPrimes(100).size(), 25);
 }
 
-TEST_F(PrimesTest, SecoundVal){
+TEST_F(GetPrimesTest, sizeCompare2){
 
-    ASSERT_EQ(pp.calculateAndPrintPrimes(100)[1], 3);
+    ASSERT_EQ(gp.findAllPrimes(200).size(), 46);
 }
 
-TEST_F(PrimesTest, ThirdVal){
+TEST_F(GetPrimesTest, sizeCompare3){
 
-    ASSERT_EQ(pp.calculateAndPrintPrimes(100)[2], 5);
+    ASSERT_EQ(gp.findAllPrimes(300).size(), 62);
 }
 
-TEST_F(PrimesTest, RndmVal1){
 
-    ASSERT_EQ(pp.calculateAndPrintPrimes(100)[13], 43);
+
+TEST_F(GetPrimesTest, FirstVal){
+
+    ASSERT_EQ(gp.findAllPrimes(100)[0], 2);
 }
 
-TEST_F(PrimesTest, RndmVal2){
+TEST_F(GetPrimesTest, SecoundVal){
 
-    ASSERT_EQ(pp.calculateAndPrintPrimes(100)[20], 73);
+    ASSERT_EQ(gp.findAllPrimes(100)[1], 3);
 }
 
-TEST_F(PrimesTest, RndmVal3){
 
-    ASSERT_EQ(pp.calculateAndPrintPrimes(100)[24], 97);
+
+TEST_F(GetPrimesTest, RndmVal1){
+
+    ASSERT_EQ(gp.findAllPrimes(100)[13], 43);
+}
+
+TEST_F(GetPrimesTest, RndmVal2){
+
+    ASSERT_EQ(gp.findAllPrimes(100)[20], 73);
+}
+
+TEST_F(GetPrimesTest, RndmVal3){
+
+    ASSERT_EQ(gp.findAllPrimes(100)[24], 97);
 }
 
 

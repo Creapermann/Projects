@@ -4,9 +4,8 @@
 
 using TIntVec = std::vector<int>;
 
-class PrintPrimes{
+class GetPrimes{
 public:
-    PrintPrimes();
-    TIntVec calculateAndPrintPrimes(const int);
-    int a();
+    GetPrimes();
+    TIntVec findAllPrimes(const int);
 };
