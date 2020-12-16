@@ -1,21 +1,15 @@
 #include <iostream>
 #include <vector>
-#include <numeric>
 #include <algorithm>
 
-#include "primes.hpp"
+using TIntVec = std::vector<int>;
 
-
-GetPrimes::GetPrimes(){};
-
-
-
-bool checkIfPrime(int a);           //Function Prototype
-
-TIntVec GetPrimes::findAllPrimes(const int n){
-
-
+int main()
+{
     //Filling up The Vector
+    int n;
+    std::cout << "Top: " << std::endl;
+    std::cin >> n;
     TIntVec baseVec(n - 1);
 
     int a = 2;
@@ -23,8 +17,8 @@ TIntVec GetPrimes::findAllPrimes(const int n){
 
 
 
-    //Finding Primes
     int pIndex = 0;
+    //Finding Primes
     bool allFound = false;
     while(allFound == false){
         int p = baseVec[pIndex];
@@ -50,5 +44,12 @@ TIntVec GetPrimes::findAllPrimes(const int n){
         }
     }
 
-    return baseVec;
+    for(auto i : baseVec){
+        if(i != -1)
+            std::cout << i << " ";
+    }
+
+    std::cout << std::endl;
+
+    return 0;
 }

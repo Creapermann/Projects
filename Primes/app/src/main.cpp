@@ -19,7 +19,8 @@ int main(){
 
 void printPrimeVec(TIntVec primeVec){
     for(auto i : primeVec){
-        std::cout << i << " ";
+        if(i != -1)
+            std::cout << i << " ";
     }
     std::cout << std::endl;
 }
