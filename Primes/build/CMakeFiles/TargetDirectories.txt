@@ -1,0 +1,8 @@
+C:/Users/Creap/Data/Programming/C++/Projects/Primes/build/CMakeFiles/ALL_BUILD.dir
+C:/Users/Creap/Data/Programming/C++/Projects/Primes/build/CMakeFiles/ZERO_CHECK.dir
+C:/Users/Creap/Data/Programming/C++/Projects/Primes/build/lib/CMakeFiles/lib.dir
+C:/Users/Creap/Data/Programming/C++/Projects/Primes/build/lib/CMakeFiles/ALL_BUILD.dir
+C:/Users/Creap/Data/Programming/C++/Projects/Primes/build/tests/test1/CMakeFiles/test1.dir
+C:/Users/Creap/Data/Programming/C++/Projects/Primes/build/tests/test1/CMakeFiles/ALL_BUILD.dir
+C:/Users/Creap/Data/Programming/C++/Projects/Primes/build/app/CMakeFiles/Primes.dir
+C:/Users/Creap/Data/Programming/C++/Projects/Primes/build/app/CMakeFiles/ALL_BUILD.dir

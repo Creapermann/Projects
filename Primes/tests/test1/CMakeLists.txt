@@ -9,4 +9,7 @@ project(test1)
 
 add_executable(${PROJECT_NAME} test.cpp)
 
-target_link_libraries(${PROJECT_NAME} PUBLIC libgtest.a pthread lib)
+target_include_directories(${PROJECT_NAME} PUBLIC "/pkg/google/googletest/include/")
+target_include_directories(${PROJECT_NAME} PUBLIC ${CMAKE_CURRENT_SOURCE_DIR}/../../lib/include/)
+
+target_link_libraries(${PROJECT_NAME} PUBLIC gtest.lib libs)

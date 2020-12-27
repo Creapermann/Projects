@@ -7,7 +7,6 @@ public:
     GetPrimes gp;
 };
 
-//METHOD TO CALCULATE THE RIGHT AMOUNT OF PRIMES FROM 2 - n
 
 //Tests
 TEST_F(GetPrimesTest, sizeCompare){
